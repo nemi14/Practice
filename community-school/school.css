@@ -29,6 +29,8 @@
   
   footer {
     clear: both;
+    text-align: center;
+    font-style: italic;
   }
   
   header, section, aside, nav, footer {
@@ -66,6 +68,10 @@ p, ul, ol {
     line-height: 0.2 rem;
 }
 
+P::first-line {
+    text-indent: 20px;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -88,3 +94,86 @@ nav a {
 
 }
 
+nav a:link, a:visited, a:focus {
+    background: lightsalmon;
+}
+
+nav a:hover {
+    background: darksalmon;
+}
+
+nav a:active {
+    background: dodgerblue;
+    color: gainsboro;
+}
+
+section a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+  
+  section a:link {
+    color: #24768f;
+  }
+  
+  section a:visited {
+    color: rgb(19, 128, 143);
+  }
+  
+  section a:focus {
+    border-bottom: 1px solid;
+    background: rgb(50, 105, 6);
+  }
+  
+  section a:hover {
+    border-bottom: 1px solid;     
+    background: rgb(100, 155, 61);
+    color: gainsboro;
+  }
+
+  section a[href*="http"] {
+    background: url('external-link-52.png') no-repeat 100% 0;
+    background-size: 16px 16px;
+    padding-right: 19px;
+  }
+  
+ul {
+    list-style-position: inside;
+    list-style-type: square; 
+}
+
+li {
+    padding: 0.2rem;
+}
+
+aside a {
+    text-decoration: none;
+    outline: none;
+    padding: 2px 1px 1px 0;
+
+}
+
+aside a:link {
+    color: #24768f;
+  }
+  
+aside a:visited {
+    color: rgb(19, 128, 143);
+  }
+  
+aside a:focus {
+    border-bottom: 1px solid;
+    background: rgb(50, 105, 6);
+  }
+  
+aside a:hover {
+    border-bottom: 1px solid;     
+    background: rgb(100, 155, 61);
+    color: gainsboro;
+  }
+
+aside a:active {
+    background: #a66;
+    color: aqua;
+}
